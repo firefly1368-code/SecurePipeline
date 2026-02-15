@@ -1,4 +1,4 @@
-# 🔥 SecurePipeline-Auto: S4-Powered DevSecOps Framework
+# 🔥 SecurePipelin: DevSecOps Framework
 
 [![S4 Security Score](https://img.shields.io/badge/S4-Score-98%25-brightgreen)](https://github.com/firefly1368-code/SecurePipeline.git)
 [![Build Status](https://img.shields.io/badge/build-passing-success)](https://github.com/firefly1368-code/SecurePipeline.git)
