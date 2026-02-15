@@ -19,8 +19,7 @@ SecurePipeline bukan sekadar tools security biasa. Ini adalah **ekosistem keaman
 - 🛡️ Generate exploit code untuk penetration testing
 - 🔧 Auto-remediate vulnerabilities tanpa campur tangan manual
 - 🐳 Kubernetes Native Security dengan custom operator
-- 🤖 AI-powered security analysis dengan akurasi 99.99%
-- 📊 Real-time dashboard dengan S4 Security Score
+walaupun ini cuman gimmick
 
 🚀 QUICK START:
 # Clone dan install
