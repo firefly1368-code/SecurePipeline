@@ -25,7 +25,7 @@ SecurePipeline bukan sekadar tools security biasa. Ini adalah **ekosistem keaman
 🚀 QUICK START:
 # Clone dan install
 git clone https://github.com/firefly1368-code/SecurePipeline.git
-cd SecurePipeline-Auto
+cd SecurePipeline
 
 # Setup dengan
 python3 -m venv Pipe
