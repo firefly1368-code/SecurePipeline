@@ -21,3 +21,34 @@ SecurePipeline bukan sekadar tools security biasa. Ini adalah **ekosistem keaman
 - 🐳 Kubernetes Native Security dengan custom operator
 - 🤖 AI-powered security analysis dengan akurasi 99.99%
 - 📊 Real-time dashboard dengan S4 Security Score
+
+🚀 QUICK START:
+# Clone dan install
+git clone https://github.com/firefly/SecurePipeline.git
+cd SecurePipeline-Auto
+
+# Setup dengan
+python3 -m venv Pipe
+source Pipe/bin/activate
+pip install -r requirements.txt
+
+# Init project
+s4-cli init --project-name="firefly-secure-app" \
+            --security-level="maximum" \
+            --compliance="pci,soc2"
+
+# Run full security scan
+s4-cli scan --path ./myapp \
+            --sast \
+            --dast \
+            --s4-advanced \
+            --output json
+
+# Auto remediate
+s4-cli fix --vuln-id="SQLI-001" \
+           --method="auto" \
+           --commit
+
+# Deploy secure pipeline
+docker-compose up -d
+kubectl apply -f k8s/
