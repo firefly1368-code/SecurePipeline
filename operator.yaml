@@ -1,0 +1,29 @@
+apiVersion: security.oxyverse.io/v1
+kind: S4SecurityPolicy
+metadata:
+  name: s4-pod-security
+spec:
+  podSecurity:
+    runAsNonRoot: true
+    seccompProfile:
+      type: RuntimeDefault
+    appArmorProfile:
+      type: Localhost
+      localhostProfile: s4-deny-write
+  
+  networkPolicy:
+    egress:
+      - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+            except:
+              - 169.254.0.0/16
+              - 10.0.0.0/8
+        ports:
+        - protocol: TCP
+          port: 443
+  
+  s4RuntimeProtection:
+    detectCryptoMiners: true
+    preventPrivilegeEscalation: true
+    blockContainerBreakout: true
