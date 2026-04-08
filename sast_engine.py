@@ -5,7 +5,7 @@ import bandit
 import semgrep
 
 class S4SASTEngine:
-    """SAST dengan kemampuan S4 - deteksi vuln sebelum kompilasi"""
+    """ deteksi vuln sebelum kompilasi"""
     
     def __init__(self, repo_path: str):
         self.repo_path = repo_path
