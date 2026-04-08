@@ -1,6 +1,6 @@
 # core/remediation.py
 class S4AutoRemediation:
-    """Auto fix vulnerabilities dengan AI-powered"""
+    """Auto fix vulnerabilities"""
     
     def fix_sql_injection(self, code: str) -> str:
         """Convert vulnerable SQL ke parameterized queries"""
@@ -15,7 +15,7 @@ class S4AutoRemediation:
                 r'cursor.execute("\1", params)',
                 code
             )
-            return f"# FIXED BY S4: SQL Injection\n{fixed}"
+            return f"# SQL Injection\n{fixed}"
     
     def add_security_headers(self, nginx_conf: str) -> str:
         """Add security headers otomatis"""
